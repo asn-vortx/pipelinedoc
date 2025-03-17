@@ -1,0 +1,13 @@
+[project]
+name = "pipelinedoc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "boto3>=1.37.13",
+    "mkdocs-material>=9.6.9",
+    "pandas>=2.2.3",
+    "pygments>=2.19.1",
+    "pymongo>=4.11.2",
+]

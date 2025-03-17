@@ -1,0 +1,51 @@
+site_name: pipelinedoc
+theme:
+  name: material
+  palette:
+    - scheme: default  # Tema claro padrão
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Mudar para modo escuro
+    - scheme: slate  # Tema escuro
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para modo claro
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.expand  # Abre os menus automaticamente
+    - toc.integrate  # Integra o sumário lateral na página
+    - search.suggest
+    - search.highlight
+    - navigation.instant
+    - toc.integrate
+    - content.code.copy
+repo_url: https://github.com/Anderson-adm/curupipe
+nav:
+  - Home: index.md
+  - Projetos ETL:
+      - ETL Taxa Selic: projects/etl-taxa-selic.md
+      - Outro Projeto: projects/etl-outro-projeto.md
+  - Biblioteca de Código:
+      - Introdução: library/index.md
+      - Conexões:
+          - MongoDB: library/mongo.md
+          - APIs: library/apis.md
+          - PostgreSQL: library/postgres.md
+      - ETL:
+          - Extração: library/extract.md
+          - Transformação: library/transform.md
+          - Carga (Load): library/load.md
+      - Testes: library/tests.md
+      - Alertas: library/alerts.md
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true   # Exibe números nas linhas do código
+      anchor_linenums: true  # Permite clicar nos números das linhas
+      auto_title: true  # Adiciona título no código
+      use_pygments: true  # Usa Pygments para coloração avançada
+  - pymdownx.superfences
