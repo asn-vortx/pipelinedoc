@@ -24,7 +24,7 @@ theme:
     - navigation.instant
     - toc.integrate
     - content.code.copy
-repo_url: https://github.com/Anderson-adm/curupipe
+repo_url: https://github.com/asn-vortx/pipelinedoc
 nav:
   - Home: index.md
   - Projetos ETL:
