@@ -26,22 +26,24 @@ theme:
     - content.code.copy
 repo_url: https://github.com/asn-vortx/pipelinedoc
 nav:
-  - Home: index.md
-  - Projetos ETL:
-      - ETL Taxa Selic: projects/etl-taxa-selic.md
-      - Outro Projeto: projects/etl-outro-projeto.md
+  - Início: index.md
   - Biblioteca de Código:
-      - Introdução: library/index.md
-      - Conexões:
-          - MongoDB: library/mongo.md
-          - APIs: library/apis.md
-          - PostgreSQL: library/postgres.md
-      - ETL:
-          - Extração: library/extract.md
-          - Transformação: library/transform.md
-          - Carga (Load): library/load.md
-      - Testes: library/tests.md
-      - Alertas: library/alerts.md
+      - Visão Geral: library/index.md
+      - 1️⃣ Connection:
+          - MongoDB: library/connection_mongodb.md
+          - PostgreSQL: library/connection_postgres.md
+          - SQL Server: library/connection_sqlserver.md
+      - 2️⃣ Extract:
+          - MongoDB: library/extract_from_mongo.md
+          # - Athena: library/extract_from_athena.md (futuramente)
+      - 3️⃣ Transform:
+          - Transformações Gerais: library/transform.md
+      - 4️⃣ Tests:
+          - Testes e Validações: library/tests.md
+      - 5️⃣ Load:
+          - Carga de Dados: library/load.md
+      - 6️⃣ IaC:
+          - Terraform & Infraestrutura: library/iac.md
 markdown_extensions:
   - pymdownx.highlight:
       linenums: true   # Exibe números nas linhas do código
